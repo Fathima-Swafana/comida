@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST">
+  {% csrf_token %}
+  ¿Estás seguro de eliminar este artículo de comida?
+  <input type="submit">
+</form>
+{% endblock %}
